@@ -79,12 +79,18 @@ class CodeMirror extends AbstractHelper
      * @param array $options
      * @return string
      */
-    public function __invoke($content, array $options = array())
+    public function __invoke($content, $options = array())
     {
         $view = $this->getView();
         $editor = array();
         
         $this->initLibrary();
+        
+        if (is_string($options)) {
+            $options = array(
+                'mode' => $options
+            );
+        }
 
         if (isset($options['mode'])) {
             $editor['mode'] = $options['mode'];
