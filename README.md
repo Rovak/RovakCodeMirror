@@ -40,3 +40,6 @@ in your view
 You can add more modes by adding them to the [module.config.php](https://github.com/Rovak/RovakCodeMirror/blob/master/config/module.config.php) file.
 Please submit a PR if you do so!
 
+## TODO
+
+- [Editor configuration](https://github.com/Rovak/RovakCodeMirror/blob/master/src/RovakCodeMirror/Options/CodeMirror.php)
