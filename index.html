@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rovak CodeMirror by Rovak</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Rovak CodeMirror</h1>
+        <p class="header">CodeMirror intergration module for Zend Framework 2</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Rovak/RovakCodeMirror/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Rovak/RovakCodeMirror/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Rovak/RovakCodeMirror">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Rovak">Rovak</a></p>
+
+
+      </header>
+      <section>
+        <h1>CodeMirror View Helper</h1>
+
+<p>CodeMirror intergration module for Zend Framework 2</p>
+
+<p>By <a href="https://github.com/Rovak">Roy van Kaathoven</a></p>
+
+<h2>Introduction</h2>
+
+<p>This module adds a view helper that enables you to easily add a codemirror
+editor to your website. It will add the required javascript files including any
+dependent mode files and adds a init function which will load the editor.</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li><a href="https://github.com/marijnh/CodeMirror">CodeMirror</a></li>
+</ul><h2>Installation</h2>
+
+<p>Configure the <code>lib_path</code> inside <a href="https://github.com/Rovak/RovakCodeMirror/blob/master/config/module.config.php">module.config.php</a>
+to point to the root of the CodeMirror library</p>
+
+<h2>Usage</h2>
+
+<p>The headScript, headLink and inlineScript view helpers are required to be outputted
+in your view</p>
+
+<div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codemirror</span><span class="p">(</span><span class="nv">$code</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+<h2>Supported modes</h2>
+
+<ul>
+<li>PHP</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>XML</li>
+<li>Javascript</li>
+</ul><p>You can add more modes by adding them to the <a href="https://github.com/Rovak/RovakCodeMirror/blob/master/config/module.config.php">module.config.php</a> file.
+Please submit a PR if you do so!</p>
+
+<h2>TODO</h2>
+
+<ul>
+<li><a href="https://github.com/Rovak/RovakCodeMirror/blob/master/src/RovakCodeMirror/Options/CodeMirror.php">Editor configuration</a></li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
