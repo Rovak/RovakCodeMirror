@@ -10,5 +10,10 @@
         {
             "name": "Roy van Kaathoven"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {
+            "RovakCodeMirror": "src/"
+        }
+    }
 }
