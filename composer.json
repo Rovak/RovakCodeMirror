@@ -1,0 +1,14 @@
+{
+    "name": "rovak/codemirror",
+    "description": "CodeMirror Module for Zend Framework 2",
+    "type": "Module",
+    "license": "MIT",
+    "keywords": [
+        "codemirror"
+    ],
+    "authors": [
+        {
+            "name": "Roy van Kaathoven"
+        }
+    ]
+}
