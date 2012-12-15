@@ -70,6 +70,9 @@ class CodeMirror extends AbstractHelper
  
         $view->headLink()->appendStylesheet($basePath . '/lib/codemirror.css' );
         $view->headScript()->appendFile($basePath . '/lib/codemirror.js' );
+        $view->headScript()->appendFile($basePath . '/lib/util/loadmode.js' );
+        $view->headScript()->appendScript(
+         sprintf("CodeMirror.modeURL = '%s';", $this->getView()->basePath('vendor/CodeMirror/mode/%N/%N.js')));
         
         $this->init = true;
     }

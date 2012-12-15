@@ -15,5 +15,8 @@
         "psr-0": {
             "RovakCodeMirror": "src/"
         }
+    },
+    "require": {
+        "rwoverdijk/assetmanager": "1.*"
     }
 }

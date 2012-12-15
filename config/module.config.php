@@ -1,12 +1,25 @@
 <?php
 
 return array(
+    
+
+    /**
+     * Asset Manager
+     */
+    'asset_manager' => array(
+        'resolver_configs' => array(
+            'paths' => array(
+                'codemirror' => __DIR__ . '/../public/',
+            ),
+        ),
+    ),
+    
     'codemirror' => array(
 
         /**
          * Path to where the library is located
          */
-        'lib_path' => '/../module/RovakCodeMirror/public/vendor/CodeMirror',
+        'lib_path' => 'vendor/CodeMirror',
 
         /**
          * Available modes
